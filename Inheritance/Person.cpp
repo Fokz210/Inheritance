@@ -2,13 +2,13 @@
 
 
 
-Person::Person (std::string name, time_t birth_date, time_t death_date, Person* spouse) :
-	birth_date_ (birth_date),
-	death_date_ (death_date),
+Person::Person (std::string name, bool dead, float finances, Person* spouse) :
 	parents_ (),
 	children_ (),
 	spouse_ (spouse),
-	name_ (name)
+	name_ (name),
+	finances_ (finances),
+	dead_ (dead)
 {
 }
 
@@ -16,14 +16,4 @@ Person::Person (std::string name, time_t birth_date, time_t death_date, Person* 
 
 Person::~Person ()
 {
-}
-
-void Person::addParent (Person* parent)
-{
-	parents_.push_back (parent);
-}
-
-void Person::addChild (Person* child)
-{
-	children_.push_back (child)
 }
