@@ -1,4 +1,4 @@
-#include "InheritanceCalc.h"
+﻿#include "InheritanceCalc.h"
 
 
 
@@ -56,7 +56,7 @@ int InheritanceCalc::checkLevel (Person* person)
 	// =============== LEVEL TWO ===============================
 	// =========================================================
 
-
+	// todo: продолжить остальное по примеру
 }
 			
 
